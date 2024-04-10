@@ -1,9 +1,31 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  const newWord = word.toLowerCase();
+
+
+  // if newWord ==! newWord.reverse
+  // return true
+  let splitString = word.split("");
+
+  let reverseArray = splitString.reverse();
+
+  let joinArray = reverseArray.join("");
+
+  if (joinArray === word){
+return true
+  }
+  else {
+    return false
+  }
 }
 
+console.log(isPalindrome("otto"))
 /* 
   Add your pseudocode here
+  // intialize a function called "isPalindrome"
+  // it will recieve a arguement string
+  // function should return true
+  // return false "if not" palindrome
 */
 
 /*
