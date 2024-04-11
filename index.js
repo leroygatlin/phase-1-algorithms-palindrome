@@ -2,9 +2,6 @@ function isPalindrome(word) {
   // Write your algorithm here
   const newWord = word.toLowerCase();
 
-
-  // if newWord ==! newWord.reverse
-  // return true
   let splitString = word.split("");
 
   let reverseArray = splitString.reverse();
@@ -30,6 +27,11 @@ console.log(isPalindrome("otto"))
 
 /*
   Add written explanation of your solution here
+Step 1: Create a variable that splits the word into an array sperating every element
+Step 2: Create a variable that reverses the splitstring
+Step 3: Create a variable that joins the array into a string
+Step 4: Create an if statement that compares JoinArray to word(parameter)
+Step 5: Return true if it matches, else return false.
 */
 
 // You can run `node index.js` to view these console logs
